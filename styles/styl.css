@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: rgba(17, 17, 17, 1);
+    color: white;
+    max-width: 1100px;
+     margin: 0 auto;
+     padding:10px 40px;
+}
+.display-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.flex-column{
+    flex-direction: column;
+    gap: 15px;
+}
+.primary-btn{
+    background-color: rgba(230, 83, 60, 1);
+    padding: 16px 20px;
+    border-radius: 42px;
+    border: none;
+}
+.secondery-btn{
+    background-color: transparent;
+    padding: 16px 20px;
+    border-radius: 42px;
+    border: 1px solid white;
+    color: white;
+}
+nav{
+    padding:4px ; 
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: rgba(230, 83, 60, 1);
+}
+.navbar{
+border: 1px solid rgba(128, 128, 128, 0.719);
+border-radius: 46px;
+gap: 30px;
+padding: 8px;
+
+}
+.navbar>button{
+    background-color:rgba(230, 83, 60, 1);
+    border-radius: 40px;
+    padding: 8px;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    margin-right: 10px;
+}
+nav>span{
+   display: none;
+}
+
+/*banner*/
+.banner-container{
+    margin-top: 100px;
+}
+.banner-left {max-width: 50%;
+    
+}
+.title{
+     font-size: 4rem;
+font-weight: 900;
+margin-bottom: 20px;
+}
+.btn-container button{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.banner-image img{
+    position: relative;
+    width: 100%;
+    display: block;
+    
+}
+.first-span{
+    position: absolute;
+    top: 320;
+    right: 150;
+    background-color: rgba(0, 0, 0, 0.527);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.second-span{ position: absolute;
+    top: 620;
+    right: 400;
+    background-color: rgba(0, 0, 0, 0.527);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.letter-bold{
+    font-size: 1.85rem;
+    font-weight: 900;
+}
+.ball{
+    width: 50px;
+    height: 50px;
+    background-color:rgba(230, 83, 60, 1);
+    border-radius: 50% ;
+}
+
+
+
+
+
+@media  screen and (max-width:475px) {
+    .container{
+    max-width: 475px;}
+    .navbar{
+        display: none;
+    }
+    nav>span{
+   display: inline;
+}
+.banner-container{
+    flex-direction: column;
+}
+.first-span{
+   
+    top: 1100;
+    right: 40;
+    
+    padding: 20px;
+    
+}
+.second-span{ 
+    top: 620;
+    right: 400;
+   
+
+}
+}
