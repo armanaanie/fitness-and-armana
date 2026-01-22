@@ -1,7 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
 }
 
 .container {
@@ -198,7 +204,8 @@ nav>span {
     grid-template-rows: repeat(2, auto);
 }
 
-.grid img {
+.grid img,
+.grid-info img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -223,7 +230,8 @@ nav>span {
     inset: 0;
     z-index: 1;
 }
-.content{
+
+.content {
     position: absolute;
     bottom: 15px;
     left: 15px;
@@ -232,22 +240,25 @@ nav>span {
     z-index: 2;
 }
 
-.content small{
+.content small {
     opacity: 0.8;
 }
 
 .content h3 {
-    margin-top:5px;
-    font-size: 14px;
+    margin-top: 5px;
+    font-size: 12px;
 }
-.content-top{
+
+.content-top {
     top: 5px;
 }
+
 .content-top1 {
     top: 10px;
-    text-align: end;}
+    text-align: end;
+}
 
-    
+
 .teal::before {
     background: rgba(0, 180, 170, 0.6);
     ;
@@ -264,6 +275,82 @@ nav>span {
 .yellow::before {
     background: rgba(240, 190, 60, 0.6);
 }
+
+.grid2 {
+    background-color: #22222286;
+    margin-top: 170px;
+    padding: 30px;
+}
+
+.grid2 .title1,
+.grid2 p {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.grid2-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    margin-top: 70px;
+    gap: 25px;
+
+}
+
+.grid2-container .grid-info {
+   
+    position: relative;
+}
+.grid2-container .grid-info img{
+     border-radius: 25px;
+    border: none;
+}
+.grid-info .contetnt1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: white;
+}
+footer{
+    margin-top: 70px;
+    padding: 30px;
+    background-color: #22222286;
+    width: 100%;
+}
+.foot{
+    margin-bottom: 20px;
+}
+footer .foot1 {
+   align-items: start;
+   padding-right: 20px;
+   padding-left: 20px;
+
+}
+.foot1 p{max-width: 300px;
+margin-bottom: 20px;}
+.foot1 ul{
+    list-style: none;
+    margin-top: 10px;
+}
+.foot ul li{
+    gap: 15px;
+
+}
+.pp{
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:575px) {
     .container {
@@ -308,11 +395,35 @@ nav>span {
     }
 
 
-.grid {
-    grid-template-columns: repeat(2, 1fr);
-}
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-.grid-2,
-.grid-4 {
-    grid-column: span 1;
-}}
+    .grid-2,
+    .grid-4 {
+        grid-column: span 1;
+    }
+
+    .grid2-container {
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+
+
+    }
+
+   footer .foot{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    grid-template-rows: repeat(3,auto);
+    place-items: center;
+    gap: 20px;
+   } 
+
+
+
+
+
+
+
+}
